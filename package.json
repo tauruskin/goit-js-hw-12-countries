@@ -11,20 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tauruskin/goit-js-hw-10-food-service.git"
+    "url": "git+https://github.com/tauruskin/goit-js-hw-12-countries.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tauruskin/goit-js-hw-10-food-service/issues"
+    "url": "https://github.com/tauruskin/goit-js-hw-12-countries/issues"
   },
   "homepage": "https://tauruskin.github.io/goit-js-hw-12-countries",
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
-    "@pnotify/core": "^5.1.2",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",

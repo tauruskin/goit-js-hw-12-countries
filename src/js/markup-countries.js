@@ -1,9 +1,8 @@
-import { error } from '@pnotify/core/dist/PNotify.js';
+import { error, Stack } from '@pnotify/core';
 import '@pnotify/core/dist/BrightTheme.css';
-
 import countriesListTemplate from '../templates/countries-list.hbs';
 import specificCountryTemplate from '../templates/specific-country.hbs';
-import refs from './refs';
+import refs from './refs.js';
 
 const notificationOptions = {
   title: 'Too many matches found',
@@ -14,30 +13,23 @@ const notificationOptions = {
   closer: false,
   sticker: false,
   remove: true,
-  delay: 500,
+  delay: 100,
 };
-
-// function errorMsg() {
-//   error({
-//     title: 'Oh No!',
-//     text: 'Something terrible happened.',
-//   });
-// }
 
 const result = {
   name: '',
 };
 
 function markupCountries(countries) {
-  if (result.name === countries[0].name && countries.lenght === 1) {
+  if (result.name === countries[0].name && countries.length === 1) {
     return;
   } else {
-    if (countries.lenght > 10) {
+    if (countries.length > 10) {
       result.name = '';
       refs.countriesBlock.innerHTML = '';
       error(notificationOptions);
     }
-    if (countries.length >= 2 && countries.lenght <= 10) {
+    if (countries.length >= 2 && countries.length <= 10) {
       result.name = '';
       const countriesListMarkup = countriesListTemplate(countries);
       refs.countriesBlock.innerHTML = countriesListMarkup;
@@ -49,4 +41,5 @@ function markupCountries(countries) {
     }
   }
 }
+
 export { markupCountries, result };

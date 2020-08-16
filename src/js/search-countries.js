@@ -1,6 +1,6 @@
 import debounce from 'lodash.debounce';
 import refs from './refs.js';
-import fetchCountries from './fetch-countries.js';
+import fetchCountries from './fetch-countries';
 
 refs.search.addEventListener(
   'input',

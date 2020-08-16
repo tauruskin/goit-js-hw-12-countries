@@ -1,5 +1,5 @@
 import { markupCountries, result } from './markup-countries.js';
-import refs from './refs.js';
+import refs from './refs';
 
 function fetchCountries(searchQuery) {
   const url = `https://restcountries.eu/rest/v2/name/${searchQuery}`;
@@ -17,4 +17,5 @@ function fetchCountries(searchQuery) {
       return console.error(err);
     });
 }
+
 export default fetchCountries;

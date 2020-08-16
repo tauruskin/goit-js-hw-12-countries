@@ -1,4 +1,4 @@
-import { error, Stack } from '@pnotify/core';
+import { error } from '@pnotify/core';
 import '@pnotify/core/dist/BrightTheme.css';
 import countriesListTemplate from '../templates/countries-list.hbs';
 import specificCountryTemplate from '../templates/specific-country.hbs';
